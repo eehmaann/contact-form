@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact Me</title>
+    <!--<link rel="stylesheet" href="css/contact.css"> -->
+    <!--<<script type="text/javascript" src="js/contact.js"></script>
+  </head>
+  <!-- needs to have name, email, message, and option for phone number
+  If phone number is selected it needs to have spot for phone number, time zone, and best time to contact-->
+
+  	<p> For more information to set up an appointment complete the form</p>
+  	<form>
+  		<label> Name </label>
+  		<input name="name" placeholder="Your Name">
+  		<span class="hint" id="nameHint">Please write your name</span> 
+
+  		<label>Email</label>
+    	<input name="email" type="email" placeholder="Your Email Address">
+    	<span class="hint" id="emailHint">Please include a valid email</span> 
+
+    	 <input type="checkbox" id="phonePreferred" name="phonePreferred" value="Yes"> I prefer to be contacted by phone<br>
+
+    	  <input size="16" placeholder="Phone Number" id="phone" name="phone"
+            type="text"> <p id="phoneHint" class="hint">The phone number is not a valid format.  Please write it as xxx-xxx-xxxx</p><br>
+          <br>
+            <div id="selectTimeZone" style="float:left;margin-right:15px;"> What time zone are you in<br>
+              <select name="timeZone" id="timeZone">
+              <option>----</option>
+              </select>
+            </div>
+    	<label>Message</label>
+    	<textarea name="message" placeholder="Type Here"></textarea>
+            
+    	<input id="submit" name="submit" type="submit" value="Submit">
+        
+</form>
